@@ -6,7 +6,7 @@ pipeline {
                 sh 'python -m venv venv'
                 sh 'chmod 777 venv/bin/activate.csh'
                 sh 'ls -lah'
-                sh '.venv/bin/activate.csh'
+                sh './venv/bin/activate.csh'
                 sh 'python -m pip install -r requirements.txt'
                 sh 'python setup.py install'
             }
