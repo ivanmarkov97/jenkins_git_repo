@@ -4,7 +4,8 @@ pipeline {
         stage('Building') {
             steps {
                 sh 'python -m venv venv'
-                sh 'source venv/bin/activate'
+                sh 'chmod 777 venv/bin/activate'
+                sh '.venv/bin/activate'
                 sh 'python -m pip install -r requirements.txt'
                 sh 'python setup.py install'
             }
