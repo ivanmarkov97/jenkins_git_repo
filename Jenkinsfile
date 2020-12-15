@@ -1,19 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Checking') {
-            steps {
-                sh 'ls -lah'
-            }
-        }
         stage('Building') {
             steps {
-                sh 'echo building'
+                sh 'pip install -r requirements.txt'
+                sh 'python setup.py install'
             }
         }
         stage('Testing') {
             steps {
-                sh 'python '
+                sh 'python setup.py pytest'
             }
         }
         stage('Deploy') {
