@@ -6,14 +6,13 @@ pipeline {
                 sh 'python -m venv venv'
                 sh 'chmod 777 venv/bin/activate'
                 sh 'ls -lah'
-                sh 'source venv/bin/activate'
-                sh 'python -m pip install -r requirements.txt'
-                sh 'python setup.py install'
+                sh 'venv/bin/python -m pip install -r requirements.txt'
+                sh 'venvbin/python setup.py install'
             }
         }
         stage('Testing') {
             steps {
-                sh 'python setup.py pytest'
+                sh 'venv/bin/python setup.py pytest'
             }
         }
         stage('Deploy') {
