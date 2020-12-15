@@ -1,0 +1,8 @@
+__pycache__/
+.idea/
+.eggs/
+.pytest_cache/
+calculator.egg-info/
+venv/
+build/
+dist/
