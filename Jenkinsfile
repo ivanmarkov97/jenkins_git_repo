@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'python -m venv venv'
                 sh 'chmod 777 venv/bin/activate'
+                sh 'ls -lah'
                 sh '.venv/bin/activate'
                 sh 'python -m pip install -r requirements.txt'
                 sh 'python setup.py install'
