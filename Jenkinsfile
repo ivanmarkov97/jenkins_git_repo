@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Pulling') {
+        stage('Checking') {
             steps {
-                sh 'echo pulling from Git'
+                sh 'ls -lah'
             }
         }
         stage('Building') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                sh 'echo testing'
+                sh 'python '
             }
         }
         stage('Deploy') {
