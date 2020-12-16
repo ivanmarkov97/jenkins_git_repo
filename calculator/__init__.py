@@ -1,12 +1,13 @@
-from .operations import sum, sub, mult, div, dot
+from .operations import add, subtract, multiply, div, dot, power
 
 
 __version__ = '1.0'
 
 __all__ = [
-    'sum',
-    'sub',
-    'mult',
+    'add',
+    'subtract',
+    'multiply',
     'div',
-    'dot'
+    'dot',
+    'power'
 ]

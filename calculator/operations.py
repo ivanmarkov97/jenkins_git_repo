@@ -1,15 +1,15 @@
 import numpy as np
 
 
-def sum(a, b):
+def add(a, b):
     return a + b
 
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 
-def mult(a, b):
+def multiply(a, b):
     return a * b
 
 
@@ -19,3 +19,7 @@ def dot(a, b):
 
 def div(a, b):
     return a / b
+
+
+def power(a, b):
+    return np.power(a, b)

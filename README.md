@@ -7,3 +7,4 @@ available operatins:
 - mult
 - dot
 - div
+- power
